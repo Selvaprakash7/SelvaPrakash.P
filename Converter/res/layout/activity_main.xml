@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#9FD8EB" />
+
+    <Button
+        android:id="@+id/convertbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/anseditText"
+        android:layout_below="@+id/anseditText"
+        android:layout_marginTop="26dp"
+        android:text="Convert" />
+
+    <EditText
+        android:id="@+id/entereditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="7"
+        android:background="#FFFFFF"
+        android:hint="Enter Value" />
+
+    <EditText
+        android:id="@+id/anseditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/entereditText"
+        android:layout_below="@+id/entereditText"
+        android:layout_marginTop="17dp"
+        android:inputType="none"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:hint="Ans" />
+
+    <TextView
+        android:id="@+id/totextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/convertbutton"
+        android:layout_toRightOf="@+id/anseditText"
+        android:textColor="#FFFF66"
+        android:text="To"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/fromtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/anseditText"
+        android:layout_alignLeft="@+id/totextView"
+        android:textColor="#FFFF66"
+        android:text="Fr"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
